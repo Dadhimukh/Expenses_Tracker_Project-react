@@ -14,8 +14,23 @@ function App() {
         <ExpenseItem 
             date={expenseDate} 
             title={expenseTitle} 
-            amount={expenseAmout} 
-            />
+            amount={expenseAmout} >
+        </ExpenseItem>
+        <ExpenseItem 
+            date={expenseDate} 
+            title={expenseTitle} 
+            amount={expenseAmout} >
+        </ExpenseItem>
+        <ExpenseItem 
+            date={expenseDate} 
+            title={expenseTitle} 
+            amount={expenseAmout} >
+        </ExpenseItem>
+        <ExpenseItem 
+            date={expenseDate} 
+            title={expenseTitle} 
+            amount={expenseAmout} >
+        </ExpenseItem>
 
     </div>
     );
