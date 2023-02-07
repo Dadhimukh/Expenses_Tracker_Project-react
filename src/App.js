@@ -2,7 +2,7 @@ import React from 'react';
 
 import './App.css';
 
-import Expenses from './Components/Expenses';
+import Expenses from './Components/Expenses/Expenses';
 
 function App() {
 
