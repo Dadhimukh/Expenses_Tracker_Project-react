@@ -1,0 +1,14 @@
+.formContainer{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.formData{
+   display: flex;
+}
+.title,.amount,.date{
+   display: flex;
+   flex-direction: column;
+
+}
