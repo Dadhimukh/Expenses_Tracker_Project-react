@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./ExpenseForm.css"
 const ExpenseForm = (props) => {
 
   const [newTitle, setNewTitle] = useState("");
@@ -37,21 +37,31 @@ const ExpenseForm = (props) => {
 
   return (
 
-    <form onSubmit={submitFormHandler}>
-      <div>
-        <label>AddTitle</label>
-        <input type="text" onChange={titleUpdateHandler} value={newTitle} />
+    <form onSubmit={submitFormHandler} className="formContainer">
+      <div className="formData">
 
-        <label>AddAmount</label>
-        <input type="number" onChange={amountUpdateHandler} value={newAmount} />
+        <div className="title">
+          <label>AddTitle</label>
+          <input type="text" onChange={titleUpdateHandler} value={newTitle} />
+        </div>
 
-        <label>AddDate</label>
-        <input type="date" onChange={dateUpdateHandler} value={newDate} />
+        <div className="amount">
+          <label>AddAmount</label>
+          <input type="number" onChange={amountUpdateHandler} value={newAmount} />
+        </div>
 
-        <button type="submit">Add Expense</button>
-
+        <div className="date">
+          <label>AddDate</label>
+          <input type="date" onChange={dateUpdateHandler} value={newDate} />
+        </div>
 
       </div>
+
+      <div className="submitButton">
+          <button type="submit">Add Expense</button>
+      </div>
+
+
     </form>
   );
 }
